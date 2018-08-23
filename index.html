@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Дизайн-студия «Nerds»</title>
+  <meta charset="UTF-8">
+  <title>Дизайн-студия «Nerds»</title>
 </head>
+
 <body>
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="../img/index-logo.svg" alt="Логотип дизайн-студии Nerds">
+        <img src="img/index-logo.svg" alt="Логотип дизайн-студии Nerds">
       </a>
       <ul class="site-navigation">
         <li><a href="#">студия</a></li>
@@ -20,23 +22,79 @@
     </nav>
   </header>
   <main class="container">
+
     <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
+
     <section class="features">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <div class="slider-1">
-        <h3 class="features-item">Долго, дорого, скрупулезно.</h3>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-      </div>
-      <div class="slider-2">
-        <h3 class="features-item">Любим математику как никто другой</h3>
-        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-      </div>
-      <div class="slider-3">
-        <h3 class="features-item">Только ночь, только хардкор</h3>
-        <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-      </div>
+      <ul class="features-list">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <li class="features-item">
+          <h3>Долго, дорого, скрупулезно.</h3>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a href="#" class="button">узнать больше</a>
+        </li>
+        <li class="features-item">
+          <h3>Любим математику как никто другой</h3>
+          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a href="#" class="button">узнать больше</a>
+        </li>
+        <li class="features-item">
+          <h3>Только ночь, только хардкор</h3>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a href="#" class="button">узнать больше</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="services">
+      <h2 class="visually-hidden">Услуги</h2>
+      <ul class="services-list">
+        <li class="services-item">
+          <h3>веб-сайты</h3>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <span class="button">заказать</span>
+        </li>
+        <li class="services-item">
+          <h3>приложения</h3>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <span class="button">заказать</span>
+        </li>
+        <li class="services-item">
+          <h3>презентации</h3>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <span class="button">заказать</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="description">
+      <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+      <b>выполняем заказы на разработку:</b>
+      <ul class="description-list">
+        <li class="description-item">Веб-сайтов любой сложности</li>
+        <li class="description-item">Мобильных приложений для iOS и Android</li>
+        <li class="description-item">Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
+    </section>
+
+    <section class="statistics">
+      <img src="" alt="логотип Нёрдс">
+      <p>С 2004 года любим точность во всем:</p>
+      <table class="statistics-list">
+        <tr class="statistics-percent"></tr>
+          <th>146%</th>
+          <th>100%</th>
+          <th>50%</th>
+        <tr class="statistics-description">
+          <td>Уровень самоотдачи</td>
+          <td>Соблюдение сроков</td>
+          <td>Минимальная предоплата</td>
+        </tr>
+      </table>
     </section>
   </main>
+
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
