@@ -7,10 +7,11 @@
 </head>
 
 <body>
+
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="img/index-logo.svg" alt="Логотип дизайн-студии Nerds">
+        <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип дизайн-студии Nerds">
       </a>
       <ul class="site-navigation">
         <li><a href="#">студия</a></li>
@@ -48,19 +49,19 @@
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="services-list">
         <li class="services-item">
-          <img src="" alt="Веб-сайты">
+          <img src="img/illustration-1.jpg" width="300px" height="146px" alt="Веб-сайты">
           <h3>веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="button button-red" href="#">заказать</a>
         </li>
         <li class="services-item">
-          <img src="" alt="Приложения">
+          <img src="img/illustration-2.jpg" width="300px" height="146px" alt="Приложения">
           <h3>приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="button button-green" href="#">заказать</a>
         </li>
         <li class="services-item">
-          <img src="" alt="Презентации">
+          <img src="img/illustration-3.jpg" width="300px" height="146px" alt="Презентации">
           <h3>презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="button button-yellow" href="#">заказать</a>
@@ -82,13 +83,14 @@
 
     <section class="statistics">
       <h2 class="visually-hidden">Статистика</h2>
-      <img src="" alt="логотип Нёрдс">
+      <img src="img/nerds-illustration.jpg" width="360px" height="208px" alt="логотип Нёрдс">
       <caption>С 2004 года любим точность во всем:</caption>
       <table class="statistics-list">
-        <tr class="statistics-percent"></tr>
-        <th>146<sup>%</sup></th>
-        <th>100<sup>%</sup></th>
-        <th>50<sup>%</sup></th>
+        <tr class="statistics-percent">
+          <th>146<sup>%</sup></th>
+          <th>100<sup>%</sup></th>
+          <th>50<sup>%</sup></th>
+        </tr>
         <tr class="statistics-description">
           <td>Уровень самоотдачи</td>
           <td>Соблюдение сроков</td>
@@ -100,23 +102,40 @@
     <section class="preview">
       <h2 class="visually-hidden">Примеры работ</h2>
       <ul class="preview-list">
-        <li class="preview-item"><a href="#"><img scr="" alt="html academy">html academy</a></li>
-        <li class="preview-item"><a href="#"><img scr="" alt="borodinski">borodinski</a></li>
-        <li class="preview-item"><a href="#"><img scr="" alt="pink">pink</a></li>
-        <li class="preview-item"><a href="#"><img scr="" alt="mishka">mishka</a></li>
+        <li class="preview-item">
+          <a href="#">
+            <img src="img/logo-1.png" width="199px" height="68px" alt="html academy">
+          </a>
+        </li>
+        <li class="preview-item">
+          <a href="#">
+            <img src="img/logo-2.png" width="209px" height="90px" alt="borodinski">
+          </a>
+        </li>
+        <li class="preview-item">
+          <a href="#">
+            <img src="img/logo-3.png" width="185px" height="52px" alt="pink">
+          </a>
+        </li>
+        <li class="preview-item">
+          <a href="#">
+            <img src="img/logo-4.png" width="173px" height="84px" alt="mishka">
+          </a>
+        </li>
       </ul>
     </section>
 
   </main>
 
   <footer class="main-footer">
-    <iframe src="" frameborder="0" class="map"></iframe>
+    <img src="img/contacts.jpg" width="1440px" height="416px" alt="191186, Санкт-Петербург,
+ул. Б. Конюшенная, д. 19/8">
     <section class="footer-contacts">
       <b>Nёrds design studio</b>
       <p>191186, Санкт-Петербург,<br>
       ул. Б. Конюшенная, д. 19/8</p>
       <p>тел. +7 (812) 275-75-75</p>
-      <span class="button">напишите нам</span>
+      <button class="button" type="button">напишите нам</button>
     </section>
     <div class="footer-social">
       <b>Давайте дружить, это выгодно!</b>
@@ -131,8 +150,22 @@
 
   <section class="modal modal-write-us">
     <h2>Напишите нам</h2>
-    <!-- form -->
-    <span class="modal-close">x</span>
+    <form class="write-us-form" action="#" method="post">
+      <p>
+        <label for="user-name">Ваше имя:</label>
+        <input class="write-us-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-mail">Ваш E-mail:</label>
+        <input class="write-us-mail" id="user-mail" type="text" name="e-mail" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="user-text">Текст письма:</label>
+        <input class="write-us-text" id="user-text" type="text" name="text" placeholder="В свободной форме">
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">x</button>
   </section>
 
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
