@@ -15,7 +15,7 @@
       <ul class="site-navigation">
         <li><a href="#">студия</a></li>
         <li><a href="#">клиенты</a></li>
-        <li class="site-navigation-current"><a href="catalog.html">магазин</a></li>
+        <li class="site-navigation-current"><a>магазин</a></li>
         <li><a href="#">контакты</a></li>
       </ul>
       <a href="cart.html" class="cart">Корзина</a>
@@ -30,8 +30,9 @@
       <form action="https://echo.htmlacademy.ru" class="filter" method="get">
         <fieldset>
           <legend>Стоимость:</legend>
-          <input type="range" name="range" min="0" max="20000" oninput="this.form.amountmin.value=this.value">
-          <input type="number" name="amountmin" min="0" oninput="this.form.range.value=this.value">
+          <input type="range" name="range" min="0" max="20000">
+          <output name="range-min">от</output>
+          <output name="range-max">до</output>
         </fieldset>
         <fieldset>
           <legend>Сетка:</legend>
@@ -45,8 +46,8 @@
               <label for="filter-fixed">Фиксированная</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid type" value="rezina" id="filter-rezina">
-              <label for="filter-rezina">Резиновая</label>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid type" value="elastic" id="filter-elastic">
+              <label for="filter-elastic">Резиновая</label>
             </li>
           </ul>
         </fieldset>
@@ -88,50 +89,62 @@
         <li class="sort-item"><a href="#">По типу</a></li>
         <li class="sort-item"><a href="#">По названию</a></li>
       </ul>
-      <div class="sort-arrows">
-        <a class="arrow-current" href="#">down</a>
-        <a href="#">up</a>
-      </div>
+      <ul class="sort-arrows">
+        <li class="sort-arrows-item sort-arrows-item-current"><a href="#">down</a></li>
+        <li class="sort-arrows-item"><a href="#">up</a></li>
+      </ul>
     </section>
 
     <section class="catalog">
       <h2 class="visually-hidden">Список готовых шаблонов</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <h3>sedona</h3>
-          <p>Информационный сайт для туристов</p>
-          <a href="#" class="button">9 900 руб.</a>
           <img src="img/img-sedona.jpg" width="360px" height="576px" alt="sedona">
+          <div class="catalog-description">
+            <h3>sedona</h3>
+            <p>Информационный сайт для туристов</p>
+            <a href="#" class="button">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog-item">
-          <h3>pink app</h3>
-          <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <a href="#" class="button">9 900 руб.</a>
           <img src="img/img-pink.jpg" width="360px" height="576px" alt="pink">
+          <div class="catalog-description">
+            <h3>pink app</h3>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <a href="#" class="button">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog-item">
-          <h3>barbershop</h3>
-          <p>Сайт салоны красоты. Для мужчин, да.</p>
-          <a href="#" class="button">9 900 руб.</a>
           <img src="img/img-barbershop.jpg" width="360px" height="576px" alt="barbershop">
+          <div class="catalog-description">
+            <h3>barbershop</h3>
+            <p>Сайт салоны красоты. Для мужчин, да.</p>
+            <a href="#" class="button">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog-item">
-          <h3>mishka</h3>
-          <p>Интернет-магазин вязаных игрушек</p>
-          <a href="#" class="button">9 900 руб.</a>
           <img src="img/img-mishka.jpg" width="360px" height="576px" alt="mishka">
+          <div class="catalog-description">
+            <h3>mishka</h3>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <a href="#" class="button">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog-item">
-          <h3>a plus</h3>
-          <p>Лендинг курсов повышения квалификации</p>
-          <a href="#" class="button">9 900 руб.</a>
           <img src="img/img-aplus.jpg" width="360px" height="576px" alt="bachelor">
+          <div class="catalog-description">
+            <h3>a plus</h3>
+            <p>Лендинг курсов повышения квалификации</p>
+            <a href="#" class="button">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog-item">
-          <h3>kvast</h3>
-          <p>Промо-сайт производителя крафтового кваса</p>
-          <a href="#" class="button">9 900 руб.</a>
           <img src="img/img-kvast.jpg" width="360px" height="576px" alt="kvast">
+          <div class="catalog-description">
+            <h3>kvast</h3>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <a href="#" class="button">9 900 руб.</a>
+          </div>
         </li>
       </ul>
 
@@ -158,9 +171,9 @@
       <b>Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
       <ul>
-        <li><a href="" class="social-button">Вконтакте</a></li>
-        <li><a href="" class="social-button">Фейсбук</a></li>
-        <li><a href="" class="social-button">Инстаграм</a></li>
+        <li><a href="#" class="social-button">Вконтакте</a></li>
+        <li><a href="#" class="social-button">Фейсбук</a></li>
+        <li><a href="#" class="social-button">Инстаграм</a></li>
       </ul>
     </div>
   </footer>
