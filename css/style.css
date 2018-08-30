@@ -25,14 +25,16 @@ a {
 
   background-color: #fb565a;
   border: none;
+  border-radius: 5px;
 }
 
-.button:hover {
-  background-color: #e74246;
-}
-
+.button:hover,
 .button:focus {
-  color: #e37376;
+  background-color: rgba(231, 66, 70, 1);
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
 
   background-color: #d7373b;
 }
@@ -41,12 +43,13 @@ a {
   background-color: #00ca74;
 }
 
-.button-green:hover {
+.button-green:hover,
+.button-green:focus {
   background-color: #00bc6c;
 }
 
-.button-green:focus {
-  color: #4dc491;
+.button-green:active {
+  color: rgba(255, 255, 255, 0.3);
 
   background-color: #00aa62;
 }
@@ -55,12 +58,13 @@ a {
   background-color: #efc84a;
 }
 
-.button-yellow:hover {
+.button-yellow:hover,
+.button-yellow:focus {
   background-color: #eab534;
 }
 
-.button-yellow:focus {
-  color: #edc265;
+.button-yellow:active {
+  color: rgba(255, 255, 255, 0.3);
 
   background-color: #e5a722;
 }
@@ -82,14 +86,13 @@ a {
   list-style: none;
 }
 
-.main-navigation a:hover {
+.main-navigation a:hover,
+.main-navigation a:focus {
   color: #fb565a;
 }
 
-.main-navigation a:focus {
-  color: #000000;
-
-  opacity: 0.3;
+.main-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .features {
@@ -127,9 +130,9 @@ a {
 
 
 .about-us {
+  font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 500;
   color: #000000;
 }
 
@@ -148,11 +151,11 @@ a {
 
 .statistics caption {
   font-weight: 700;
-  text-transform: uppercase;
   color: #000000;
+  text-transform: uppercase;
 }
 
-.statistics-percent th{
+.statistics-percent th {
   font-weight: 700;
   font-size: 45px;
   line-height: 45px;
@@ -167,20 +170,21 @@ a {
   opacity: 0.2;
 }
 
-.preview-item:hover {
+.preview-item:hover,
+.preview-item:focus {
   opacity: 1;
 }
 
-.preview-item:focus {
+.preview-item:active {
   opacity: 0.1;
 }
 
-.footer-contacts b{
+.footer-contacts b {
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  text-transform: uppercase;
-  font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .footer-contacts p {
@@ -189,9 +193,9 @@ a {
 }
 
 .footer-social b {
+  font-weight: 700;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 700;
   color: #000000;
 }
 
@@ -205,9 +209,9 @@ a {
 }
 
 .modal h2 {
+  font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 500;
   color: #000000;
 }
 
@@ -217,19 +221,139 @@ a {
   color: #000000;
 }
 
-.modal-write-us input[type="text"] {
+.write-us-modal {
   font: inherit;
   line-height: 18px;
   color: #444444;
+
   border: 2px solid #d7dcde;
 }
 
-.modal-write-us input:hover {
+.write-us-modal:hover {
   border-color: #b4b9bb;
 }
 
-.modal-write-us input:focus {
-  color: #000000;
-
+.write-us-modal:focus {
   border-color: #000000;
+}
+
+/*Стилизация каталога*/
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.site-navigation-current {
+  border-bottom: 2px solid #fb565a;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filters ul {
+  list-style: none;
+  line-height: 20px;
+}
+
+.filter-input + label {
+  color: #283136;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #000000;
+}
+
+.filter-input:disabled + label {
+  opacity: 0.3;
+}
+
+.sort h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sort ul {
+  list-style: none;
+}
+
+.sort li {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.sort a {
+  color: #000000;
+}
+
+.sort li:hover,
+.sort li:focus {
+  opacity: 0.6;
+}
+
+.sort li:active {
+  opacity: 1;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-description h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-description p {
+  line-height: 18px;
+  color: #666666;
+}
+
+.catalog-item:hover {
+  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #000000;
+  line-height: 18px;
+
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item a:focus {
+  background-color: #ffffff;
+  border: solid 3px #dbdbdb;
 }
