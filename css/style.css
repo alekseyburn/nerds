@@ -17,6 +17,7 @@ a {
 
 .button {
   font: inherit;
+  font-weight: 500;
   line-height: 18px;
   vertical-align: middle;
   text-align: center;
@@ -25,7 +26,20 @@ a {
 
   background-color: #fb565a;
   border: none;
-  border-radius: 5px;
+}
+
+.social-button {
+  background-color: #e1e1e1;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #e74246;
+}
+
+.social-button:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
 }
 
 .button:hover,
@@ -37,6 +51,7 @@ a {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #d7373b;
+  box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
 }
 
 .button-green {
@@ -237,6 +252,23 @@ a {
   border-color: #000000;
 }
 
+.write-us-modal:invalid {
+  border-color: #e74246;
+}
+
+.modal-close {
+  opacity: 0.3;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
+}
+
 /*Стилизация каталога*/
 
 .page-title {
@@ -280,6 +312,22 @@ a {
   opacity: 0.3;
 }
 
+.filter-button {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .sort h3 {
   font-size: 18px;
   font-weight: 700;
@@ -316,6 +364,10 @@ a {
   list-style: none;
 }
 
+.catalog-description {
+  background-color: #eeeeee;
+}
+
 .catalog-description h3 {
   font-size: 18px;
   font-weight: 700;
@@ -333,6 +385,14 @@ a {
   box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
 }
 
+.catalog-item img:first-child {
+  opacity: 0.1;
+}
+
+.catalog-item:hover img:first-child {
+  opacity: 1;
+}
+
 .pagination-list {
   list-style: none;
 }
@@ -344,16 +404,18 @@ a {
   background-color: #eeeeee;
 }
 
-.pagination-item a:hover {
+.pagination-item a:hover,
+.pagination-item a:focus {
   background-color: #dfdfdf;
 }
 
 .pagination-item a:active {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 3px rgba(0, 1 ,1 , 0.1);
 }
 
-.pagination-item a:focus {
+.pagination-item-current a {
   background-color: #ffffff;
   border: solid 3px #dbdbdb;
 }
