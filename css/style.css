@@ -419,3 +419,63 @@ a {
   background-color: #ffffff;
   border: solid 3px #dbdbdb;
 }
+
+/*стилизация каталога*/
+
+/*сеточные стили*/
+html,
+body {
+  min-width: 1200px;
+  min-height: 2476px;
+}
+
+.main-header {
+  min-height: 115px;
+  border: 2px dotted  black;  /*delete*/
+  margin-bottom: 1px;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  border: 2px dotted  green;  /*delete*/
+}
+
+.site-navigation {
+  width: 600px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  border: 2px dotted  green;  /*delete*/
+  min-height: 115px;
+}
+
+.main-navigation {
+min-height: 115px;
+border: 2px dotted  red;  /*delete*/
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.main-navigation-wrapper {
+ width: 100%;
+}
+
+.cart {
+  width: 160px;
+  min-height: 115px;
+  border: 2px dotted  green;  /*delete*/
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
