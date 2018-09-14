@@ -9,25 +9,30 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="inner-page">
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип дизайн-студии Nerds">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="#">студия</a></li>
-        <li><a href="#">клиенты</a></li>
-        <li class="site-navigation-current"><a>магазин</a></li>
-        <li><a href="#">контакты</a></li>
-      </ul>
-      <a href="cart.html" class="cart">Корзина</a>
+<nav class="main-navigation">
+        <div class="container">
+          <a class="main-header-logo">
+            <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип дизайн-студии Nerds">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="#">студия</a></li>
+            <li><a href="#">клиенты</a></li>
+            <li><a href="catalog.html">магазин</a></li>
+            <li><a href="#">контакты</a></li>
+          </ul>
+          <a href="cart.html" class="cart">Корзина</a>
+        </div>
     </nav>
+    <div class="container">
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
+  </div>
   </header>
 
   <main class="container">
-    <h1 class="page-title">Магазин готовых шаблонов</h1>
 
+<div class="catalog-columns">
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" class="filter" method="get">
@@ -84,7 +89,9 @@
       </form>
     </section>
 
-    <section class="sort">
+
+    <section class="catalog">
+      <section class="sort">
       <h2 class="visually-hidden">Сортировка товаров</h2>
       <h3>Сортировать:</h3>
       <ul class="sort-list">
@@ -97,8 +104,6 @@
         <li class="sort-arrows-item"><a href="#">up</a></li>
       </ul>
     </section>
-
-    <section class="catalog">
       <h2 class="visually-hidden">Список готовых шаблонов</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -164,6 +169,7 @@
         <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
       </ul>
     </section>
+    </div>
   </main>
 
   <footer class="main-footer">
