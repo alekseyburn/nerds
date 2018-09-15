@@ -429,25 +429,17 @@ body {
   min-height: 3213px;
 }
 
-body {
-  background-image: url("../img/nerds-catalog.jpg");
-  background-size: 1440px; auto;
-  background-repeat: no-repeat;
-}
-
 /*шапка*/ /*навигация*/
 .main-header {
   margin-bottom: 80px;
   min-height: 545px;
-  /*background-color: #eeeeee;*/
-  /*outline: 1px dotted black; /*delete*/*/
+  background-color: #eeeeee;
 }
 
 .main-header-logo {
   width: 160px;
   height: 65px;
   padding-top: 49px;
-  /*outline: 1px solid black;*/
 }
 
 .site-navigation {
@@ -456,7 +448,6 @@ body {
   padding: 0;
 padding-left: 200px;
   list-style: none;
-  /*outline: 1px solid black;*/
 }
 
 .main-navigation {
@@ -466,20 +457,19 @@ padding-left: 200px;
 .cart {
   width: 160px;
   margin-left: auto;
-  /*outline: 1px solid black;*/
 }
 
 .container {
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
-  border: 1px solid black; background-color: rgba(133,3,3,0.2);  /*delete*/
 }
 
 .main-navigation .container {
   display: flex;
   align-items: flex-start;
 }
+
 /*навигация*/
 /*слайдер*/
 
@@ -494,6 +484,7 @@ padding-left: 200px;
 }
 /*слайдер  */ /*навигация*/
 /*услуги*/
+
 .services {
   margin-bottom: 80px;
 }
@@ -503,23 +494,20 @@ padding-left: 200px;
   padding: 0;
   list-style: none;
   display: flex;
-    /*outline: 1px solid black; background-color: rgba(133,3,3,0.2);  /*delete*/*/
-
 }
 
 .services-item {
   width: 300px;
   padding-right: 100px;
-   /*outline: 2px dotted  green;  /*delete*/*/
 }
+
 /*услуги*/
 /*описание*/
+
 .index-columns {
   display: flex;
   justify-content: space-between;
   margin-bottom: 76px;
-    outline: 1px solid black; background-color: rgba(133,3,3,0.2);  /*delete*/
-
 }
 
 
@@ -532,6 +520,7 @@ padding-left: 200px;
 }
 /*описание*/
 /*примеры*/
+
 .preview-list {
   display: flex;
   justify-content: space-between;
@@ -542,8 +531,6 @@ padding-left: 200px;
 
   list-style: none;
   text-align: center;
-
-  outline: 1px solid black;
 }
 
 .preview-item {
@@ -552,6 +539,7 @@ padding-left: 200px;
 
 /*примеры*/
 /*футер*/
+
 .main-footer {
   margin-top: 80px;
 }
@@ -559,7 +547,6 @@ padding-left: 200px;
 .footer-contacts {
 
   background-color: #fff;
-  outline: 1px solid black;
   padding: 47px 50px;
   width: 220px;
 }
@@ -573,7 +560,6 @@ padding-left: 200px;
   padding: 0;
   list-style: none;
   width: 260px;
-  outline: 1px solid black;
   margin-right: 140px;
 }
 
@@ -588,25 +574,21 @@ padding-left: 200px;
 
 /*каталог*/
 /*шапка*/
+
 .inner-page .main-header {
   min-height: 355px;
   margin-bottom: 55px;
-  outline: 1px solid black;
 }
 /*шапка*/
+/*фильтр*/
 
 .filter {
   width: 260px;
   min-height: 780px;
-  outline: 1px solid black;
 }
 
-.catalog {
-  width: 760px;
-  min-height: 1910px;
-  outline: 1px solid black;
-}
-
+/*фильтр*/
+/*сортировка*/
 .sort {
   width: 760px;
   display: flex;
@@ -632,10 +614,17 @@ padding-left: 200px;
   display: flex;
 }
 
+/*сортировка*/
+/*каталог*/
+
+.catalog {
+  width: 760px;
+  min-height: 1910px;
+}
+
 .catalog-columns {
   display: flex;
   justify-content: space-between;
-
 }
 
 .catalog-item {
@@ -655,11 +644,16 @@ padding-left: 200px;
   margin-right: 40px;
 }
 
+/*каталог*/
+/*пагинатор*/
+
 .pagination-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+/*пагинатор*/
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
