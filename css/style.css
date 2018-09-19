@@ -59,8 +59,12 @@ a {
   box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
 }
 
+.button-red {
+  width: 160px;
+}
 .button-green {
   background-color: #00ca74;
+  width: 160px;
 }
 
 .button-green:hover,
@@ -76,6 +80,7 @@ a {
 
 .button-yellow {
   background-color: #efc84a;
+  width: 160px;
 }
 
 .button-yellow:hover,
@@ -136,49 +141,96 @@ a {
 .services-list {
   list-style: none;
 }
-
+.services-item img {
+  margin-bottom: 18px;
+}
 .services-item h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
+.services-item p {
+  max-width: 260px;
+  margin: 0;
+  margin-bottom: 34px;
+}
 
 .about-us {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   color: #000000;
+  margin: 0;
+margin-top: 35px;
+margin-bottom: 32px;
+}
+.description p:nth-child(3) {
+  margin: 0;
+  margin-bottom: 37px;
 }
 
 .description-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+margin-top: 12px;
 }
 
+.description-item {
+  margin-left: 36px;
+  position: relative;
+}
+
+.description-item::before {
+  position: absolute;
+
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  top: 24px;
+  left: -35px;
+
+}
 .description-header {
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .description-item {
-  line-height: 45px;
+  line-height: 48px;
+}
+.statistics {
+  outline: 1px solid black;
+}
+.statistics img {
+  margin-bottom: 27px;
 }
 
 .statistics caption {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+  width: 360px;
+  margin-bottom: 39px;
 }
 
-.statistics-percent th {
+.statistics-percent {
   font-weight: 700;
   font-size: 45px;
   line-height: 45px;
   color: #000000;
+  text-align: left;
 }
 
+.statistics-description {
+  margin: 0;
+}
 .preview-list {
   list-style: none;
 }
@@ -445,10 +497,6 @@ body {
 .main-header-logo {
   width: 160px;
   height: 65px;
-  /*margin-top: 49px;*/
-
-/*  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234,255,45);*/
 }
 
 .site-navigation {
@@ -603,7 +651,7 @@ letter-spacing: 0.2px;
 
 .services-item {
   width: 300px;
-  padding-right: 100px;
+  margin-right: 100px;
 }
 
 /*услуги*/
@@ -613,9 +661,12 @@ letter-spacing: 0.2px;
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
-  padding-bottom: 73px;
+  padding-bottom: 63px;
 
   border-bottom: 2px solid #eeeeee;
+
+/*  background: rgba(0,128,0,0.2);
+  box-shadow: 0 0 0 2px green;*/
 }
 
 
@@ -793,7 +844,7 @@ input[type="radio"].visually-hidden {
 
 /*декоративные элементы*/
 
-img {
-  max-width: 100%;
+/*.services-item img {
+  width: 100%;
   height: auto;
-}
+}*/
