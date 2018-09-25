@@ -22,6 +22,7 @@ a {
 }
 
 .container {
+  display: block;
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
@@ -99,7 +100,7 @@ a {
 /*навигация*/
 
 .main-header {
-  min-height: 545px;
+  padding-top: 49px;
 
   background-color: #eeeeee;
 }
@@ -127,12 +128,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  min-height: 114px;
 
-  -webkit-box-align: end;
   -webkit-box-pack: justify;
-  -ms-flex-align: end;
   -ms-flex-pack: justify;
 }
 
@@ -149,11 +146,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-end;
   width: 440px;
   margin: 0;
   margin-right: 34px;
   padding: 0;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 
   list-style: none;
   letter-spacing: 0.2px;
@@ -175,15 +173,19 @@ a {
 .cart {
   position: relative;
 
+  display: flex;
+  align-items: center;
   max-width: 160px;
-  margin-bottom: 10px;
+  margin-top: 16px;
   padding-left: 50px;
+
+  -ms-align-items: center;
 }
 
 .cart::before {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 17px;
   left: 9px;
 
   width: 15px;
@@ -515,7 +517,7 @@ a {
   padding-right: 20px;
 }
 
-.partnres-item:last-child {
+.partners-item:last-child {
   padding-top: 2px;
   padding-left: 20px;
 }
@@ -621,14 +623,14 @@ a {
 
 .footer-contacts p {
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 
   line-height: 18px;
   color: #666666;
 }
 
 .footer-contacts .studio-name {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   font-weight: 700;
   font-size: 18px;
@@ -935,12 +937,13 @@ input[type="email"]:invalid {
 /*футер*/
 
 .inner-page .main-header {
-  min-height: 355px;
-  margin-bottom: 55px;
+  min-height: 305px;
+  margin-bottom: 56px;
 }
 
+
 .site-navigation-current {
-  margin-bottom: -6px;
+  margin-bottom: -2px;
 
   border-bottom: 2px solid #fb565a;
 }
@@ -964,12 +967,11 @@ input[type="email"]:invalid {
 
 .filters {
   width: 260px;
-  min-height: 780px;
 }
 
 .filters fieldset {
   margin: 0;
-  margin-bottom: 57px;
+  margin-bottom: 54px;
   padding: 0;
 
   border: none;
@@ -994,7 +996,7 @@ input[type="email"]:invalid {
   position: relative;
 
   height: 41px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -1018,7 +1020,7 @@ input[type="email"]:invalid {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 30px;
   left: 0;
 
   width: 4px;
@@ -1056,8 +1058,8 @@ input[type="email"]:invalid {
 
 .price-controls input {
   width: 60px;
-  margin-left: 10px;
-  padding: 8px 10px;
+  margin-left: 12px;
+  padding: 10px 10px;
 
   text-align: center;
   color: #283136;
